@@ -636,12 +636,12 @@ private static String translate1to19ToEnglish(int number) {
           <ul>Usually they are just used to fill parameter lists.</ul>
         </li>
         <li><b>Fake objects</b> actually <b>have working implementations</b>, but usually take some <b>shortcut</b> which makes them <b>unsuitable for production</b>.
-          <ul>Memory database is a good example.</ul>
+          <ul>In-memory file-system is a good example: <a href="https://github.com/google/jimfs"></a>Jimfs.</ul>
         </li>
         <li><b>Stubs</b> provide <b>canned answers to calls made during the test</b>, usually not responding at all to anything outside what’s programmed in for the test. 
-          <ul>Stubs may also record information about calls, such as an email gateway stub that remembers the messages it ‘sent’, or maybe only how many messages it ‘sent’.</ul>
+          <!-- <ul>Stubs may also record information about calls, such as an email gateway stub that remembers the messages it ‘sent’, or maybe only how many messages it ‘sent’.</ul> -->
         </li>
-        <li><b>Mocks!</b> -- <b>objects pre-programmed with expectations</b> which form a specification of the calls they are expected to receive.</li>
+        <li><b>Mocks!</b> -- <b>objects pre-programmed with expectations</b>, which form a specification of the calls they are expected to receive.</li>
       </ul>
     </article>
   </slide>
@@ -682,7 +682,7 @@ private static String translate1to19ToEnglish(int number) {
     <ul>
       <li>Mocks: Programmable Objects<a href="https://bitbucket.org/vpalepu/191b/src/2c7fd7cdb1701e845809b8e62760f8a1ccbc4cb0/TDD/src/edu/uci/inf215/foobar/FancyFoobarTranslatorTest.java?at=master&fileviewer=file-view-default#FancyFoobarTranslatorTest.java-42">[code e.g.]</a></li>
       <li>Stubs: Objects with Canned Responses.<a href="https://bitbucket.org/vpalepu/191b/src/2c7fd7cdb1701e845809b8e62760f8a1ccbc4cb0/TDD/src/edu/uci/inf215/foobar/FancyFoobarTranslatorTest.java?at=master&fileviewer=file-view-default#FancyFoobarTranslatorTest.java-59">[code e.g.]</a></li>
-      <li>Spies: From Russia with Love. <a href="http://site.mockito.org/mockito/docs/current/org/mockito/Mockito.html#spy(T)">[code e.g.1]</a> <a href="http://site.mockito.org/mockito/docs/current/org/mockito/Spy.html">[code e.g.2]</a></li>
+      <li>Spies: "From Russia with Love". <a href="http://site.mockito.org/mockito/docs/current/org/mockito/Mockito.html#spy(T)">[code e.g.1]</a> <a href="http://site.mockito.org/mockito/docs/current/org/mockito/Spy.html">[code e.g.2]</a></li>
     </ul>
     </article>
   </slide>
